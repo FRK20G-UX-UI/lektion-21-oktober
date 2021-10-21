@@ -90,10 +90,16 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem 1rem;
   padding: 0 0 5rem 0; }
+  @media only screen and (max-width: 480px) {
+    .products {
+      grid-template-columns: 100%; } }
   .products__heading {
     grid-column: auto / span 4;
     text-align: center;
     margin: 3rem 0; }
+    @media only screen and (max-width: 480px) {
+      .products__heading {
+        grid-column: auto / span 1; } }
   .products .card h3 {
     margin: 0; }
 
